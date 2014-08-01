@@ -182,7 +182,7 @@ header p.lead{
 header .carousel-iphone{
 	margin-right: auto;
 	margin-left: auto;
-	width: 320px;
+	width: 720px;
 	height: 672px;
 	background: url('../img/iphone-front.png') no-repeat;
 	background-size: 100%;
@@ -192,9 +192,9 @@ header .carousel-iphone{
 header .carousel {
 	position: relative;
 	margin-right: auto;
-	margin-left: auto;
-	padding: 95px 0px 0px 4px;
-	width: 282px;
+	margin-left: 83px;
+	padding: 43px 0 0 4px;
+	width: 550px;
 }
 
 header .carousel-indicators .active {
@@ -204,7 +204,8 @@ header .carousel-indicators .active {
 }
 
 header .carousel-indicators {
-	bottom: -63px;
+	bottom: -175px;
+	margin-left: -152px;
 }
 
 header .carousel-indicators li {
@@ -296,10 +297,10 @@ header .carousel-indicators li {
 	overflow: hidden;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 95px;
-	width: 320px;
+	/*padding-top: 95px;*/
+	width: 520px;
 	height: 450px;
-	background: url('../img/iphone-front.png') no-repeat;
+	/*background: url('../img/iphone-front.png') no-repeat;*/
 	background-size: 100%;
 }
 
@@ -307,7 +308,7 @@ header .carousel-indicators li {
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 4px;
-	width: 280px;
+	width: 500px;
 }
 
 .detail .carousel-indicators {
