@@ -220,6 +220,15 @@ header .carousel-indicators li {
 	cursor: pointer;
 }
 
+input{
+  width: 320px;
+  height: 52px;
+  margin: 0px 10px 0px 10px;
+  padding: 0px 3px 0px 10px;
+  font-size: 28px;
+}
+
+
 /*-----------------------------------------------------------------------------------*/
 /* PURCHASE
 /*-----------------------------------------------------------------------------------*/
@@ -245,13 +254,6 @@ header .carousel-indicators li {
   background: url(../img/badge-signup.png) #3a3a3a no-repeat 0px 5px;
 }
 
-.purchase input{
-  width: 320px;
-  height: 52px;
-  margin: 0px 10px 0px 10px;
-  padding: 0px 3px 0px 10px;
-  font-size: 28px;
-}
 
 /*-----------------------------------------------------------------------------------*/
 /*	PAYOFF
@@ -470,7 +472,7 @@ header .carousel-indicators li {
 /*-----------------------------------------------------------------------------------*/
 
 .get-it{
-	padding: 100px 0px 160px 0px;
+	padding: 20px 0px 30px 0px;
 	text-align: center;
 }
 
@@ -484,22 +486,6 @@ header .carousel-indicators li {
 .get-it hr{
 	margin-top: 3em;
 	margin-bottom: 3em;
-}
-
-.get-it ul{
-	list-style-type: none;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-}
-
-.get-it ul li{
-	display: inline-block;
-	margin-left:30px;
-}
-
-.get-it ul li:first-child{
-	margin-left: 0px;
 }
 
 .get-it ul li a{
