@@ -3,6 +3,17 @@ function IsEmail(email) {
   return regex.test(email);
 }
 
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
 // toggle visibility for css3 animations
 $(document).ready(function() {
 	$('header').addClass('visibility');
@@ -39,7 +50,29 @@ $(document).ready(function() {
 		}
 	});
 
-});
+	$('section.buffer').appear();
+	$('section.features').appear();
+	$('section.social').appear();
+	$('section.get-it').appear();
+	$('section.carousel').appear();
+	$('section.science').appear();
+	$('section.signup').appear();
+
+ 	var viewed = {};
+
+	$(document.body).on('appear', 'section', function(e, $affected) {
+
+	  $affected.each(function() {
+			item = $(this).attr('class');
+			if (!(item in viewed)){
+				viewed[item] = true;
+				mixpanel.track("In " + item);
+				mixpanel.people.set('Viewed Sections', Object.keys(viewed));
+			}
+	  });
+
+	});
+	});
 
 
 //iphone carousel animation
