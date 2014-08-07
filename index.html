@@ -4,7 +4,7 @@
     <title>BulkPublish is the best way to schedule multiple posts to your Buffer profiles</title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- CSS 
+    <!-- CSS
         ================================================== -->
     <!-- Bootstrap 3-->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -19,12 +19,15 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:Condensed" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
 
-	<script type="text/javascript" src="js/price.js"></script>
 
 
+	<!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+	for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+	mixpanel.init("fe2fe93ed4690b860d8f041241ee1e8e", {cross_subdomain_cookie : false﻿})﻿;
+  </script><!-- end Mixpanel -->
       </head>
   <body>
-	  
+
 	  <!-- NAVBAR
 	      ================================================== -->
 	  <nav class="navbar navbar-default" role="navigation">
@@ -36,42 +39,42 @@
 			      <span class="icon-bar"></span>
 			      <span class="icon-bar"></span>
 			    </button>
-			    
+
 			    <!--Replace text with your app name or logo image-->
 			    <a class="navbar-brand" href="#">BulkPublish</a>
-			    
+
 			  </div>
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
 			    <ul class="nav navbar-nav">
 			      <li><a onclick="$('header').animatescroll({padding:71});">Start</a></li>
 			      <li><a onclick="$('.detail').animatescroll({padding:71});">Screens</a></li>
 			      <li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
-			      <li><a onclick="$('.social').animatescroll({padding:71});">Social	</a></li>
+			      <li><a onclick="$('.detail').animatescroll({padding:71});">Plans	</a></li>
 			    </ul>
 			  </div>
 		  </div>
 	  </nav>
-	  
-	  
+
+
 	   <!-- HEADER
-	   ================================================== -->	  
+	   ================================================== -->
 	  <header>
 		 <div class="container">
 			 <div class="row">
 				 <div class="col-md-12">
 					  <p class="logo">BulkPublish</p>
 					  <p class="lead">Schedule multiple posts to your Buffer profiles</p>
-					  
+
 					  <div class="carousel-iphone">
 					  	<div id="carousel-example-generic" class="carousel slide">
-					    
+
 					    <!-- Indicators -->
 					    <ol class="carousel-indicators">
 					      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 					      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 					      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
 					    </ol>
-					  
+
 					    <!-- Wrapper for slides -->
 					    <div class="carousel-inner">
 					      <div class="item active">
@@ -83,32 +86,33 @@
 					      <div class="item">
 					        <img src="img/screenshots/app-3.png" alt="App Screen 3">
 					      </div>
-					      
+
 					    </div>
 					  </div>
 					</div>
-				</div>	  
-			</div>    
+				</div>
+			</div>
 		</div>
 	 </header>
-	  
-	  
+
+
 	  <!-- PURCHASE
 	      ================================================== -->
-	  <section class="purchase">
+	  <section class="purchase signup">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-md-offset-2 col-md-8">
 					 <h1>Love Buffer? You’ll love BulkPublish.</h1>
 					 	    <p class="lead">Save several hours every week by bulk scheduling posts to your Buffer profiles.</p>
-					 	    <button type="button" class="app-store"></button>	
+					 	     <input type="text" name="email" value="" placeholder="Your Email" class="signup-input" id="email"></input>
+					 	    <button type="button" class="app-store signup-btn"></button>
 				  </div>
 			  </div>
 		  </div>
 	  </section>
-	  
-	  
-	  <!-- PAYOFF 
+
+
+	  <!-- PAYOFF
 	      ================================================== -->
 	  <section class="payoff">
 		<div class="container">
@@ -117,13 +121,13 @@
 					  <h1>Professional publishers deserve a powerful pro tool.</h1>
 				  </div>
 			  </div>
-		  </div>	  
+		  </div>
 	  </section>
-	  
+
 
 	  <!-- PURCHASE
 	      ================================================== -->
-	  <section class="purchase">
+	  <section class="purchase science">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-md-offset-2 col-md-8">
@@ -133,47 +137,47 @@
 			  </div>
 		  </div>
 	  </section>
-	  
+
 
 	  <!-- FEATURES
 	      ================================================== -->
 	  <section class="features">
 		  <div class="container">
 			  <div class="row">
-				
+
 				  <div class="col-md-4">
 					  <div class="circle"><i class="icon-bookmark"></i></div>
 					  <h2>Quick &amp; Easy Setup</h2>
 					  <p>It's a breeze. Upload a CSV, choose which profiles you’d like to schedule the posts for, and publish away. Posts show up automatically in your Buffer schedule.</p>
 				  </div>
-				
+
 				  <div class="col-md-4">
 					  <div class="circle"><i class="icon-keypad"></i></div>
 					  <h2>Add Images</h2>
 					  <p>Our unique ability to add inline images to scheduled posts drives better click throughs. Drag and drop images and associate them with posts.</p>
 				  </div>
-				 
+
 				  <div class="col-md-4">
 					  <div class="circle"><i class="icon-like"></i></div>
 					  <h2>Pro Editor</h2>
 					  <p>Publishers deserve a professional editor. Reorder, edit, and make changes to your posts before you schedule them.</p>
 				  </div>
-				  
+
 			  </div>
 		  </div>
 	  </section>
-	  
 
 
-	  
-	  <!-- DETAILS 
+
+
+	  <!-- DETAILS
 	      ================================================== -->
-	  <section class="detail">
+	  <section class="detail carousel">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div id="carousel-example-generic-2" class="carousel slide">
-										
+
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner">
 					    <div class="item active">
@@ -216,20 +220,20 @@
 					      </div>
 					    </div>
 					  </div>
-					
+
 					  <!-- Indicators -->
 					  <ol class="carousel-indicators">
 					    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
 					    <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
 					    <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
-					  </ol>		
+					  </ol>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
-	
+
+
 	 <!-- SOCIAL
 	     ================================================== -->
 	  <section class="social">
@@ -240,13 +244,13 @@
 	  			   	<a class="icon-twitter" href="http://twitter.com/BulkPublish"></a>
 	  			   </div>
 	  		  </div>
-	  	  </div>	  
+	  	  </div>
 	  </section>
-	  
-	
-	 <!-- GET IT 
+
+
+	 <!-- GET IT
 	     ================================================== -->
-	  <section>
+	  <section class="get-it pricing">
 
 	  	<div class="container">
 	  		<div class="row">
@@ -283,7 +287,7 @@
 					</div>
 
 					<div class="price">
-			      <a href="#" class="bottom"><p class="cart">Signup</p></a>
+            <a href="#" class="bottom" onclick="$('.purchase').animatescroll({padding:71});"><p class="cart">Signup</p></a>
 					</div>
 				</div>
 			</div>
@@ -312,7 +316,7 @@
 						</ul>
 					</div>
 					<div class="price">
-						<a href="#" class="bottom"><p class="cart">Signup</p></a>
+            <a href="#" class="bottom" onclick="$('.purchase').animatescroll({padding:71});"><p class="cart">Signup</p></a>
 					</div>
 				</div>
 			</div>
@@ -342,32 +346,68 @@
 						</ul>
 					</div>
 					<div class="price">
-			      <a href="#" class="bottom"><p class="cart">Signup</p></a>
+			      <a href="#" class="bottom" onclick="$('.purchase').animatescroll({padding:71});"><p class="cart">Signup</p></a>
 					</div>
 				</div>
 
-	  				
+
 	  			</div>
 	  			<div class="col-md-12">
 	  				<hr />
 	  				<h1>Professional Support & Reliability</h1>
 	  				<p class="lead">We respond to tweets within two hours as much as we can, and offer a free webinar for first time users to help you get setup.</p>
-		  			<ul>
-	                	<li><a href="mailto:hello@bulkpublish.com">Help</a></li>
-	                	<li><a href="http://twitter.com/BulkPublish">Twitter</a></li>
-                	</ul>
+            <input type="text" name="email" value="" placeholder="Your Email" class="signup-input" id="email"></input>
+            <button type="button" class="app-store signup-btn"></button>
 	  			</div>
+
 	  		</div>
 	  	</div>
 	  </section>
-	  
-	 
+
+
+
+   <!-- Buffer
+       ================================================== -->
+    <section class="buffer">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Buffer and BulkPublish</h2>
+              <p>BulkPublish is not owned or operated by Buffer. BulkPublish is a companion tool for professional publishers who use Buffer. BulkPublish leverages Buffer's infrastructure for scheduling your posts. Therefore, all limits set by Buffer's plans apply to your BulkPublish accounts. If you are hitting limits on your Buffer, consider checking out their <a href="https://bufferapp.com/awesome?utm_campaign=bulkpublish" target="_blank">Awesome Plan</a> or their <a href="https://bufferapp.com/business?utm_campaign=bulkpublish" target="_blank">Business Plans.</a></p>
+               <a class="icon-twitter" href="http://twitter.com/BulkPublish"></a>
+             </div>
+          </div>
+        </div>
+    </section>
+
+
+
 	 <!-- JAVASCRIPT
 	     ================================================== -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/animatescroll.js"></script>
+    <script src="js/jquery.appear.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/retina-1.1.0.min.js"></script>
-  	
+    <script type="text/javascript" src="js/price.js"></script>
+    <script src="js/retina.min.js"></script>
+  <!-- Asynchronous Google Analytics snippet -->
+    <script>
+      var _gaq = _gaq || [];
+      var pluginUrl =
+     '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+      _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+      _gaq.push(['_setAccount', 'UA-35664860-7']);
+      _gaq.push(['require', 'displayfeatures']);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_trackEvent', 'Navigation', 'Page View', 'clicked']);
+
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
 </html>
