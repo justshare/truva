@@ -44,9 +44,11 @@ $(document).ready(function() {
 			"$last_login": new Date(),         // properties can be dates...
 			});
 			$('.signup-input').parent().html("<h1>Thanks for signing up</h1><br>We'll let you know once we launch... which should be soon!");
+			_gaq.push(['_trackEvent', 'Navigation', 'Signed Up', data]);
 		}
 		else{
 			mixpanel.track("Invalid Email", {"data": data});
+			_gaq.push(['_trackEvent', 'Navigation', 'Invalid Email', data]);
 		}
 	});
 
@@ -68,6 +70,7 @@ $(document).ready(function() {
 				viewed[item] = true;
 				mixpanel.track("In " + item);
 				mixpanel.people.set('Viewed Sections', Object.keys(viewed));
+				_gaq.push(['_trackEvent', 'Navigation', item, 'viewed']);
 			}
 	  });
 
