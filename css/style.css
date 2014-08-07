@@ -512,46 +512,60 @@ input{
 
 	header{
 		padding-bottom: 50px;
-		min-height: 1000px;
+		min-height: 610px;
 		height: 100%;
+	}
+
+
+	header .carousel {
+    margin-left: 75px;
+    width: 75%;
+	}
+
+	header .carousel-iphone {
+    width: 100%;
 	}
 
 	.navbar-nav {
 		float: left;
 		text-align: left;
-}
+	}
 
+	header .carousel-iphone{
+		/*width: 720px;*/
+		/*height: 310px;*/
+	}
 
 }
 
 @media (max-width:992px) {
 
-.detail .carousel h1, .detail p{
-	text-align: center;
-}
+	.detail .carousel h1, .detail p{
+		text-align: center;
+	}
 
-.detail p{
+	.detail p{
+			margin-bottom: 60px;
+	}
+
+	header, .social{
+		background-position-y: 0px;
+		background-size: 200%;
+	}
+
+	.payoff{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		min-height: 200px;
+	}
+
+	.payoff h1{
+		font-size: 24px;
+	}
+
+	.features .col-md-4{
 		margin-bottom: 60px;
-}
-
-header, .social{
-	background-position-y: 0px;
-	background-size: 200%;
-}
-
-.payoff{
-	padding-top: 50px;
-	padding-bottom: 50px;
-	min-height: 200px;
-}
-
-.payoff h1{
-	font-size: 24px;
-}
-
-.features .col-md-4{
-	margin-bottom: 60px;
-}
+	}
 
 }
 
@@ -571,6 +585,11 @@ header, .social{
 		margin-left: 35px;
 		width: 206px;
 		height: 119px;
+	}
+
+	header .carousel-iphone{
+		/*width: 720px;*/
+		height: 310px;
 	}
 
 	header ol.carousel-indicators{
