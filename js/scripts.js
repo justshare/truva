@@ -35,6 +35,11 @@ $(document).ready(function() {
 	});
 
 	$('.signup-btn').click(function(){
+    mixpanel.track("Signup Clicked");
+    window.location.href = "http://app.bulkpublish.com/#/signup";
+  });
+  /**
+    function(){
 		var data = $(this).prev('input')[0].value;
 		if(IsEmail(data)){
 			mixpanel.track("Signup Clicked", {"email": data});
@@ -50,7 +55,7 @@ $(document).ready(function() {
 			mixpanel.track("Invalid Email", {"data": data});
 			_gaq.push(['_trackEvent', 'Navigation', 'Invalid Email', data]);
 		}
-	});
+	});**/
 
 	$('section.buffer').appear();
 	$('section.features').appear();

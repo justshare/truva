@@ -265,7 +265,7 @@ input{
 	min-height: 600px;
 	background: url('../img/twitter.jpg');
 	background-position: center top;
-	background-repeat: repeat-x;
+  background-size: cover;
 	color: white;
 }
 
@@ -413,7 +413,7 @@ input{
 	min-height: 350px;
 	background: url('../img/ski.jpg');
 	background-position: center top;
-	background-repeat: repeat-x;
+  background-size: cover;
 	color: white;
 }
 
@@ -445,7 +445,7 @@ input{
   min-height: 350px;
   background: url('../img/ski.jpg');
   background-position: center top;
-  background-repeat: repeat-x;
+  background-size: cover;
   color: #111;
 }
 
@@ -579,7 +579,7 @@ input{
 		padding-top: 85px;
 		width: 245px;
 	}
-	
+
 	header div.carousel{
 		padding-top: 19px;
 		margin-left: 35px;
