@@ -36,7 +36,8 @@ $(document).ready(function() {
 
 	$('.signup-btn').click(function(){
     mixpanel.track("Signup Clicked");
-    window.location.href = "http://app.bulkpublish.com/#/signup";
+    query  = window.location.search.substring(1);
+    window.location.href = "http://app.bulkpublish.com/#/signup?"+query;
   });
   /**
     function(){
